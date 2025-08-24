@@ -6,18 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HomeWork 12</title>
     <script type="module" crossorigin src="/goit-js-hw-12/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/index-DvPDDfy5.css">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-12/assets/vendor-5YrzWRhu.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/vendor-CWKLx11g.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/index-B0Gifnni.css">
   </head>
   <body>
 
-  <header class="header">
-    <div class="container">
-    </div>
-
+  <header>
+    <h1>Pixabay Image Search</h1>
+    <form id="search-form">
+      <input type="text" name="searchQuery" placeholder="Search images..." required />
+      <button type="submit">Search</button>
+    </form>
   </header>
 
     <main>
+      <div class="gallery"></div>
+      <div class="loader"></div>
+      <button class="load-more">Load more</button>
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simplelightbox/dist/simple-lightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/izitoast/dist/js/iziToast.min.js"></script>
   </body>
 </html>
